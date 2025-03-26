@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #f4f4f4;
+    background: #fff;
 }
 
 header,
@@ -58,7 +58,9 @@ footer {
         max-height: 4vh
     }
 }
-
+main {
+    flex: 1;
+}
 .info-main {
     display: flex;
     gap: 40px;
