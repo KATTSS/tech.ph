@@ -7,13 +7,14 @@ body {
     background: #f4f4f4;
 }
 
-header, footer {
+header,
+footer {
     background: #071328;
     color: #fff;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 0 30px; 
+    padding: 0 30px;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
 .header img.logo {
     max-height: 80%;
     max-width: 30%;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 footer {
@@ -31,7 +32,8 @@ footer {
     justify-content: center;
 }
 
-.info-footer {
+.info-footer,
+.main-content {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -48,10 +50,66 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .footer-text { font-size: 0.4rem }
-    .footer-logo { max-height: 4vh }
+    .footer-text {
+        font-size: 0.4rem
+    }
+
+    .footer-logo {
+        max-height: 4vh
+    }
 }
 
-main {
-    flex-grow: 1;
+.info-main {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+.robo-pic {
+    max-width: 45%;
+    height: auto;
+    object-fit: contain;
+    min-width: 300px;
+}
+
+.info-box {
+    max-width: 500px;
+}
+
+.main-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #071328;
+    text-align: center;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .info-main {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .robo-pic {
+        max-width: 80%;
+        min-width: 200px;
+    }
+
+    .main-text {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .robo-pic {
+        max-width: 100%;
+    }
 }
